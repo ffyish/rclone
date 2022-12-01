@@ -1,0 +1,1 @@
+PKGS=$(go list ./... | grep `go list`/ | xargs | tr ' ' ,) && ./go-callvis -focus "" -limit "${PKGS}" `go list`
